@@ -22,6 +22,25 @@
         <a class="nav-link" href="{% url 'places_visited' %}">Places you've visited</a>
     </div>
 
+<h1>My First Google Map</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://goo.gl/maps/3spNAvn7H89KLcF26"></script>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15610974.400295954!2d80.96535702513536!3d23.322955918630935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1633270352897!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
     </body>
 </html>
     
